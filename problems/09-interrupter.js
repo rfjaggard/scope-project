@@ -17,6 +17,21 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 ***********************************************************************/
 
 // Your code here 
+const interrupter = (interruptingWord) => {
+  const word = interruptingWord.split(" ");
+    const result = word.map((words)=> words + words).join(" ");
+    console.log(result)
+    return result;
+}
+
+
+let rudePerson = interrupter("what"); // => returns a function
+console.log(rudePerson("how are you")); // prints "how what are what you"
+console.log(rudePerson("I like pie")); // prints "I what like what pie"
+
+let rudePerson2 = interrupter("yo"); // => returns a function
+console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
