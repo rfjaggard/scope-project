@@ -9,9 +9,7 @@ Examples:
 
 ***********************************************************************/
 
-const arrowRestSum = (...num) => num.reduce((acc, currentValue) => acc + currentValue, 0);
-  
-console.log(arrowRestSum)
+const arrowRestSum = (...num) => num.reduce((acc, currentValue) => acc + currentValue);
 
 arrowRestSum(3,5,6); // => 14
 arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 45
